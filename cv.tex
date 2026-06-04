@@ -1,0 +1,147 @@
+\documentclass[a4paper,10pt]{article}
+
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{parskip}
+\usepackage{sectsty}
+
+% Page geometry - A4 size with narrow margins
+\geometry{a4paper, left=0.75in, right=0.75in, top=0.75in, bottom=0.75in}
+
+% Colors
+\definecolor{primary}{RGB}{30, 60, 90}
+\definecolor{secondary}{RGB}{80, 120, 160}
+
+% Hyperlink setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=primary,
+    urlcolor=secondary,
+    pdfborder={0 0 0}
+}
+
+% Section formatting using sectsty
+\allsectionsfont{\Large\bfseries\color{primary}}
+
+% Custom commands
+\newcommand{\contactinfo}[1]{\small #1 \par}
+\newcommand{\subsectionheader}[1]{\vspace{2pt}\noindent\textbf{\color{secondary}#1}}
+
+% Remove paragraph skip
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+% Header with name and contact info
+\begin{center}
+    % Profile Picture Placeholder
+    \fbox{%
+        \begin{minipage}[c][2.5cm][c]{2.5cm}
+            \centering
+            \vfill
+            {\small Profile Photo}\\
+            {\footnotesize (Add profile.jpg here)}\\
+            \vfill
+        \end{minipage}%
+    }
+    
+    \vspace{0.5cm}
+    
+    {\Huge\bfseries\color{primary} SOUVIK SENGUPTA}
+    
+    \vspace{0.3cm}
+    
+    \contactinfo{Ichapur, North 24 Parganas, West Bengal}
+    \contactinfo{Mobile: +91 62918 67951 \quad|\quad Email: \href{mailto:souviksengupta801@gmail.com}{souviksengupta801@gmail.com}}
+    \contactinfo{LinkedIn: \href{https://linkedin.com/in/souvik-sengupta-7564a131b}{linkedin.com/in/souvik-sengupta-7564a131b} \quad|\quad GitHub: \href{https://github.com/souviksengupta801}{github.com/souviksengupta801}}
+\end{center}
+
+\vspace{0.5cm}
+
+% Professional Summary
+\section{PROFESSIONAL SUMMARY}
+MCA graduate from Adamas University with a strong academic foundation in Computer Science and practical exposure to programming, databases, and web technologies. Comfortable working in academic environments, assisting students during practical sessions, and supporting laboratory activities. Seeking an opportunity to contribute through technical support, laboratory management, and academic assistance while continuing to develop professional and technical skills.
+
+% Education
+\section{EDUCATION}
+\begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
+    \textbf{Master of Computer Applications (MCA)} & \textbf{CGPA: 7.57 / 10} \\
+    Adamas University & Year of Completion: 2025 \\
+    \\
+    \textbf{Bachelor of Computer Applications (BCA)} & \textbf{CGPA: 9.16 / 10} \\
+    JIS College of Engineering & Year of Completion: 2022 \\
+\end{tabular*}
+
+% Technical Skills
+\section{TECHNICAL SKILLS}
+\begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}l@{}}
+    \subsectionheader{Programming:} & Java, Python \\
+    \subsectionheader{Web Technologies:} & HTML, CSS, JavaScript \\
+    \subsectionheader{Database:} & MySQL \\
+    \subsectionheader{Tools \& Platforms:} & Windows, GitHub \\
+\end{tabular*}
+
+% Academic Projects
+\section{ACADEMIC PROJECTS}
+\textbf{Mental Health Prediction System}
+\begin{itemize}[leftmargin=*, noitemsep, topsep=2pt]
+    \item Developed an academic project focused on analysing emotional well-being using facial expression and response-based inputs.
+    \item Worked with modern software tools and machine learning concepts as part of project implementation.
+    \item Gained experience in project development, testing, and documentation.
+\end{itemize}
+
+\vspace{4pt}
+
+\textbf{Online Admission System}
+\begin{itemize}[leftmargin=*, noitemsep, topsep=2pt]
+    \item Developed a web-based admission management system for handling student application workflows.
+    \item Implemented registration, document submission, and administrative approval features.
+    \item Strengthened understanding of databases, web technologies, and system design concepts.
+\end{itemize}
+
+% Laboratory & Academic Support
+\section{LABORATORY \& ACADEMIC SUPPORT}
+\begin{itemize}[leftmargin=*, noitemsep, topsep=2pt]
+    \item Comfortable assisting students during practical laboratory sessions.
+    \item Able to guide students with basic programming and software-related tasks.
+    \item Familiar with software installation, configuration, and routine troubleshooting.
+    \item Experienced in presenting academic projects and technical concepts.
+    \item Strong focus on documentation, organization, and maintaining a structured work environment.
+\end{itemize}
+
+% Certification
+\section{CERTIFICATION}
+\begin{itemize}[leftmargin=*, noitemsep, topsep=2pt]
+    \item NPTEL – Soft Skills Training
+\end{itemize}
+
+% Strengths
+\section{STRENGTHS}
+\begin{itemize}[leftmargin=*, noitemsep, topsep=2pt, itemsep=2pt]
+    \item Good Communication Skills
+    \item Problem Solving Ability
+    \item Attention to Detail
+    \item Adaptability
+    \item Team Collaboration
+    \item Professional Work Ethic
+\end{itemize}
+
+% Languages
+\section{LANGUAGES}
+English \quad|\quad Bengali \quad|\quad Hindi
+
+\vspace{8pt}
+
+% References
+\begin{center}
+    \textit{References available upon request}
+\end{center}
+
+\end{document}
